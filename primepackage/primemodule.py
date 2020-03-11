@@ -38,11 +38,13 @@ def getNPrime(num):
     prime_numbers = []
 
     # loop through numbers until num is reached
-    for y in range(num):
+    for y in range(0, num):
         # if the isPrime returns true for y it is added to list
         if isPrime(y):
             prime_numbers.append(y)
     # return the list of prime numbers after y reaches num
     for i in range(len(prime_numbers)):
+        # add prime number i to prime_numbers and convert it to integer
         prime_numbers[i] = int(prime_numbers[i])
+    # return list of primes once for loops complete
     return prime_numbers

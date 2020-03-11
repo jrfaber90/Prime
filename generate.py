@@ -11,6 +11,14 @@ from primepackage.primeio import *
 def main():
     """Generate 100 prime numbers and output it into output.csv file
 
+        variable primes calls getNPrime(100) to generate a list of prime numbers to 100
+
+        write_primes() is called using parameters (primes(list), 'output.csv')
+
+        variable l created and calls function read_primes() using 'output.csv'
+        to retrieve list of prime numbers that was created
+
+        print() function called with l(list) as the argument and prints all the values of list l
     """
     # call method getNPrime to retrieve prime numbers up to 100
     primes = getNPrime(100)
